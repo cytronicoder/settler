@@ -1,0 +1,233 @@
+[
+  {
+    "scenario": "A nearby colony has been struck by disease, and you fear it may spread to your settlement.",
+    "preEffect": { "morale": -10, "population": -5 },
+    "choices": [
+      {
+        "text": "Close off access to your colony and implement a quarantine.",
+        "effects": { "morale": -5, "relations": -10, "defense": 10 },
+        "note": "Quarantines protected colonists but risked isolation and tension with neighbors. Causation: Health crises prompted colonies to adopt early public health measures."
+      },
+      {
+        "text": "Send supplies and medicine to aid the affected colony.",
+        "effects": { "relations": 10, "economy": -10, "population": -5 },
+        "note": "Helping others strengthened alliances but weakened local resources. CCOT: Aid efforts laid groundwork for intercolonial cooperation."
+      },
+      {
+        "text": "Ignore the outbreak and continue as usual.",
+        "effects": { "morale": 5, "population": -10 },
+        "note": "Neglecting health risks led to higher casualties, as in early Jamestown. Comparison: Colonies with proactive health policies fared better long-term."
+      }
+    ]
+  },
+  {
+    "scenario": "A food shortage threatens your colony due to poor harvests and pests.",
+    "preEffect": { "food": -20, "morale": -10 },
+    "choices": [
+      {
+        "text": "Offer incentives for colonists to increase agricultural efforts.",
+        "effects": { "food": 15, "economy": -5 },
+        "note": "Incentivizing agriculture temporarily improved food supply but strained resources. Causation: Encouraging farming stabilized colonies in early America."
+      },
+      {
+        "text": "Seek alternative food sources like fishing or hunting.",
+        "effects": { "food": 10, "morale": -5, "defense": -5 },
+        "note": "Diversifying food sources ensured survival but required additional defenses. Comparison: Resourcefulness was key to survival in coastal colonies."
+      },
+      {
+        "text": "Reduce rations to make food last longer.",
+        "effects": { "food": 15, "morale": -15 },
+        "note": "Rationing helped weather shortages but lowered morale. CCOT: Food scarcity forced colonies to plan for sustainable agricultural practices."
+      }
+    ]
+  },
+  {
+    "scenario": "A group of colonists demand more rights and representation in colony decisions.",
+    "preEffect": { "morale": -15 },
+    "choices": [
+      {
+        "text": "Allow a council of elected representatives to help govern.",
+        "effects": { "morale": 10, "stability": 5 },
+        "note": "Early self-governance efforts set precedents for democracy. CCOT: The development of representative councils shaped political evolution in colonies."
+      },
+      {
+        "text": "Appoint a trusted leader to maintain order.",
+        "effects": { "morale": -5, "stability": 10 },
+        "note": "Strong central leadership increased stability but limited freedom. Comparison: Autocratic colonies differed from those with elected leaders."
+      },
+      {
+        "text": "Suppress dissent to maintain control.",
+        "effects": { "stability": 10, "morale": -20 },
+        "note": "Suppressing dissent maintained short-term control but bred long-term resentment. Causation: Harsh rule often backfired, fueling calls for autonomy."
+      }
+    ]
+  },
+  {
+    "scenario": "Relations with a local tribe are tense, but they offer a peace treaty.",
+    "preEffect": { "relations": -10, "morale": -5 },
+    "choices": [
+      {
+        "text": "Accept the treaty and open trade channels.",
+        "effects": { "relations": 15, "economy": 10 },
+        "note": "Peace treaties fostered cooperation and economic growth. CCOT: Early treaties helped establish temporary peace and economic stability."
+      },
+      {
+        "text": "Demand better terms for the colony's security.",
+        "effects": { "defense": 10, "relations": -5 },
+        "note": "Negotiating security terms increased safety but risked alienating tribes. Comparison: Colonies that prioritized defense often clashed with Natives."
+      },
+      {
+        "text": "Reject the treaty and prepare for possible conflict.",
+        "effects": { "defense": 15, "morale": -10, "relations": -15 },
+        "note": "Rejecting peace increased defenses but led to greater hostility. Causation: Rejected treaties often resulted in wars that strained resources."
+      }
+    ]
+  },
+  {
+    "scenario": "A dispute over land ownership arises between settlers and a neighboring colony.",
+    "preEffect": { "relations": -10, "economy": -5 },
+    "choices": [
+      {
+        "text": "Seek a peaceful compromise to avoid conflict.",
+        "effects": { "relations": 15, "morale": 5 },
+        "note": "Compromises preserved peace but often led to complex land laws. CCOT: Disputes contributed to evolving legal frameworks for land ownership."
+      },
+      {
+        "text": "Defend your claim with a show of force.",
+        "effects": { "defense": 10, "relations": -10 },
+        "note": "Defending land built colonial strength but risked tensions with neighbors. Comparison: Aggressive expansion policies often resulted in conflicts."
+      },
+      {
+        "text": "Sell disputed land to raise funds for the colony.",
+        "effects": { "economy": 10, "relations": 5, "defense": -5 },
+        "note": "Selling land provided funds but reduced defensive territory. Causation: Land sales fueled colonial economies but limited territorial control."
+      }
+    ]
+  },
+  {
+    "scenario": "A drought severely reduces your colony’s water supply.",
+    "preEffect": { "food": -10, "morale": -10 },
+    "choices": [
+      {
+        "text": "Implement strict water rationing policies.",
+        "effects": { "food": 5, "morale": -10 },
+        "note": "Rationing water helped colonies survive but strained morale. CCOT: Water scarcity shaped resource management practices in colonies."
+      },
+      {
+        "text": "Build infrastructure to collect and store rainwater.",
+        "effects": { "food": 10, "economy": -10 },
+        "note": "Infrastructure projects secured water but required resources. Causation: Investment in infrastructure led to greater colony resilience."
+      },
+      {
+        "text": "Seek help from nearby tribes to find water sources.",
+        "effects": { "relations": 10, "food": 5 },
+        "note": "Collaborating with Native tribes provided solutions but required diplomacy. Comparison: Colonies with Native alliances managed droughts better."
+      }
+    ]
+  },
+  {
+    "scenario": "A group of skilled artisans arrives, seeking work in your colony.",
+    "preEffect": { "population": 5 },
+    "choices": [
+      {
+        "text": "Provide land and tools to encourage their settlement.",
+        "effects": { "economy": 10, "morale": 5 },
+        "note": "Encouraging skilled settlers enhanced colonial economy. CCOT: Skilled laborers contributed to diversified colonial economies."
+      },
+      {
+        "text": "Offer employment in existing industries.",
+        "effects": { "economy": 5, "morale": 5 },
+        "note": "Hiring skilled labor improved productivity but increased wages. Comparison: Colonies with artisan communities saw faster economic growth."
+      },
+      {
+        "text": "Limit their influence to maintain social order.",
+        "effects": { "morale": -5, "stability": 10 },
+        "note": "Restricting newcomers preserved traditional structures but stifled growth. Causation: Limited acceptance of outsiders shaped colony cohesion."
+      }
+    ]
+  },
+  {
+    "scenario": "Your colony experiences an influx of indentured servants.",
+    "preEffect": { "population": 10 },
+    "choices": [
+      {
+        "text": "Assign them to help with agricultural production.",
+        "effects": { "food": 10, "morale": -5 },
+        "note": "Indentured servants bolstered agriculture but faced poor conditions. CCOT: Indentured labor contributed to agricultural expansion and social stratification."
+      },
+      {
+        "text": "Train them in skilled labor for future growth.",
+        "effects": { "economy": 10, "morale": -5 },
+        "note": "Training servants in trades improved long-term economy. Causation: Skilled labor training created upward mobility but required resources."
+      },
+      {
+        "text": "Restrict servant numbers to prevent unrest.",
+        "effects": { "stability": 10, "morale": -5 },
+        "note": "Limiting servants reduced potential unrest but stifled growth. Comparison: Over-reliance on labor systems often led to social tensions."
+      }
+    ]
+  },
+  {
+    "scenario": "A wealthy settler offers a large donation to the colony in exchange for political influence.",
+    "preEffect": { "economy": 10 },
+    "choices": [
+      {
+        "text": "Accept and grant them a position in governance.",
+        "effects": { "morale": -10, "stability": 5 },
+        "note": "Accepting wealthy influence created political divides. CCOT: Early colonies grappled with balancing wealth and political power."
+      },
+      {
+        "text": "Reject the offer to maintain equal governance.",
+        "effects": { "morale": 10, "economy": -5 },
+        "note": "Rejecting offers preserved equality but limited funds. Causation: Economic independence fostered more equitable governance."
+      },
+      {
+        "text": "Accept the donation but limit their authority.",
+        "effects": { "economy": 5, "stability": 10 },
+        "note": "Limiting donor influence ensured stability but caused resentment. Comparison: Wealth influence shaped political dynamics in colonies differently."
+      }
+    ]
+  },
+  {
+    "scenario": "Rumors spread of a pirate attack on your coastal settlement.",
+    "preEffect": { "morale": -5, "defense": -10 },
+    "choices": [
+      {
+        "text": "Increase defenses around the coast.",
+        "effects": { "defense": 15, "economy": -10 },
+        "note": "Enhanced coastal defenses improved safety but diverted resources. CCOT: Coastal colonies developed military defenses over time."
+      },
+      {
+        "text": "Negotiate with pirates for protection in exchange for payment.",
+        "effects": { "economy": -5, "morale": -10, "defense": 5 },
+        "note": "Dealing with pirates protected temporarily but risked colony’s reputation. Comparison: Some colonies used pirates to secure economic trade routes."
+      },
+      {
+        "text": "Evacuate settlers to the interior temporarily.",
+        "effects": { "morale": -10, "defense": 5, "population": -5 },
+        "note": "Evacuating protected lives but disrupted productivity. Causation: Relocation strategies were often used in times of crisis."
+      }
+    ]
+  },
+  {
+    "scenario": "A new colony law sparks resistance among settlers.",
+    "preEffect": { "morale": -15 },
+    "choices": [
+      {
+        "text": "Revoke the law to maintain peace.",
+        "effects": { "morale": 10, "stability": -5 },
+        "note": "Repealing laws pacified settlers but weakened governance authority. CCOT: Colonies adapted laws to settlers' demands, influencing future autonomy."
+      },
+      {
+        "text": "Enforce the law strictly to set a precedent.",
+        "effects": { "stability": 10, "morale": -10 },
+        "note": "Strict enforcement reinforced authority but increased resentment. Causation: Governance challenges spurred calls for reform in colonies."
+      },
+      {
+        "text": "Allow settlers to vote on the law.",
+        "effects": { "morale": 5, "stability": 5 },
+        "note": "Allowing votes encouraged unity but risked leadership authority. Comparison: Direct democracy practices shaped colonial political systems."
+      }
+    ]
+  }
+]

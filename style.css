@@ -1,0 +1,114 @@
+body {
+  font-family: "Georgia", serif;
+  background-color: #f4f0e6;
+  margin: 0;
+  padding: 0;
+}
+
+#game-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fdfaf3;
+  border: 3px solid #8b5e3c;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #8b5e3c;
+  font-family: "Times New Roman", serif;
+}
+
+#stats {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+#stats p {
+  font-size: 16px;
+  margin: 0;
+}
+
+.stat-value {
+  font-weight: bold;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.stat-green {
+  color: #006400;
+}
+
+.stat-yellow {
+  color: #d4a017;
+}
+
+.stat-red {
+  color: #b22222;
+}
+
+#scenario-container {
+  text-align: center;
+}
+
+#scenario-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #3e2723;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn {
+  width: 80%;
+  padding: 10px;
+  margin: 5px;
+  background-color: #8b0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-family: "Georgia", serif;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#next-btn {
+  display: block;
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.btn:hover {
+  background-color: #5a1f0e;
+}
+
+#historical-note {
+  margin-top: 20px;
+  font-style: italic;
+  color: #5d4037;
+  font-family: "Georgia", serif;
+}
+
+#start-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #8b0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Georgia", serif;
+}
+
+#start-btn:hover {
+  background-color: #5a1f0e;
+}

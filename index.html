@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Settler's Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+      <h1>Settler's Game</h1>
+      <div id="stats">
+        <p>Population: <span id="population" class="stat-value">100%</span></p>
+        <p>Food: <span id="food" class="stat-value">50%</span></p>
+        <p>Economy: <span id="economy" class="stat-value">50%</span></p>
+        <p>Relations: <span id="relations" class="stat-value">50%</span></p>
+        <p>Morale: <span id="morale" class="stat-value">100%</span></p>
+        <p>Defense: <span id="defense" class="stat-value">50%</span></p>
+      </div>
+      <div id="scenario-container">
+        <p id="scenario-text"></p>
+
+        <!-- Choice Buttons Container -->
+        <div id="choice-buttons" class="btn-container">
+          <!-- Choice buttons will be dynamically added here -->
+        </div>
+
+        <!-- Info Section for Historical Note, Additional Info, and Image -->
+        <div id="info-section" style="display: none">
+          <p id="historical-note"></p>
+          <p id="additional-info"></p>
+          <img
+            id="scenario-image"
+            src=""
+            alt="Scenario Image"
+            style="display: none"
+          />
+          <button id="next-btn" class="btn">Next</button>
+        </div>
+      </div>
+      <button id="start-btn" class="btn">Start Game</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
