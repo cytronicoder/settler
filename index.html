@@ -3,7 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Settler's Game</title>
+    <meta
+      name="description"
+      content="Do you have what it takes to lead a settlement?"
+    />
+    <meta name="author" content="Zeyu Yao" />
+    <meta
+      name="keywords"
+      content="game, settlers, colony, adventure, text-based"
+    />
+
+    <meta property="og:title" content="Settler's Game" />
+    <meta
+      property="og:description"
+      content="Do you have what it takes to lead a settlement?"
+    />
+    <meta
+      property="og:image"
+      content="https://cloud-ep94ahac3-hack-club-bot.vercel.app/0og-image.png"
+    />
+    <meta property="og:url" content="https://settlers.cytronicoder.com/" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Settler's Game" />
+    <meta
+      name="twitter:description"
+      content="Do you have what it takes to lead a settlement?"
+    />
+    <meta
+      name="twitter:image"
+      content="https://cloud-ep94ahac3-hack-club-bot.vercel.app/0og-image.png"
+    />
+
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -17,7 +53,6 @@
         choice you make shall shape our future. Do we have your commitment?
       </p>
 
-      <!-- Stats Section with Descriptions -->
       <div id="stats">
         <div class="stat">
           <p>
@@ -49,16 +84,9 @@
         </div>
       </div>
 
-      <!-- Scenario Section -->
       <div id="scenario-container">
         <p id="scenario-text"></p>
-
-        <!-- Choice Buttons Container -->
-        <div id="choice-buttons" class="btn-container">
-          <!-- Choice buttons will be dynamically added here -->
-        </div>
-
-        <!-- Info Section for Historical Note, Additional Info, and Image -->
+        <div id="choice-buttons" class="btn-container"></div>
         <div id="info-section" style="display: none">
           <p id="historical-note"></p>
           <p id="additional-info"></p>
@@ -72,7 +100,6 @@
         </div>
       </div>
 
-      <!-- Start Button -->
       <button id="start-btn" class="btn">Start Game</button>
     </div>
     <script src="script.js"></script>
