@@ -21,15 +21,35 @@ h1 {
   font-family: "Times New Roman", serif;
 }
 
+.game-intro {
+  text-align: center;
+  font-size: 16px;
+  color: #3e2723;
+  margin: 20px 0;
+}
+
 #stats {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 20px;
 }
 
-#stats p {
-  font-size: 16px;
+.stat {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.stat p {
   margin: 0;
+  font-size: 16px;
+}
+
+.stat-desc {
+  font-size: 12px;
+  color: #5d4037;
+  font-style: italic;
 }
 
 .stat-value {
@@ -52,6 +72,7 @@ h1 {
 
 #scenario-container {
   text-align: center;
+  margin-top: 20px;
 }
 
 #scenario-text {
@@ -111,4 +132,16 @@ h1 {
 
 #start-btn:hover {
   background-color: #5a1f0e;
+}
+
+#info-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#scenario-image {
+  margin-top: 15px;
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }

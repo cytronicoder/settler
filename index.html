@@ -2,20 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Settler's Game</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="game-container">
       <h1>Settler's Game</h1>
+      <p class="game-intro">
+        Greetings, noble adventurer! You have bravely chosen to lead our humble
+        settlement to prosperity in this wild New World. As Governor, you will
+        face trials and triumphs aplenty. Manage our people, sustain their
+        spirits, and defend against threats from without and within. Every
+        choice you make shall shape our future. Do we have your commitment?
+      </p>
+
+      <!-- Stats Section with Descriptions -->
       <div id="stats">
-        <p>Population: <span id="population" class="stat-value">100%</span></p>
-        <p>Food: <span id="food" class="stat-value">50%</span></p>
-        <p>Economy: <span id="economy" class="stat-value">50%</span></p>
-        <p>Relations: <span id="relations" class="stat-value">50%</span></p>
-        <p>Morale: <span id="morale" class="stat-value">100%</span></p>
-        <p>Defense: <span id="defense" class="stat-value">50%</span></p>
+        <div class="stat">
+          <p>
+            Population: <span id="population" class="stat-value">100%</span>
+          </p>
+          <p class="stat-desc">The number of settlers in your colony.</p>
+        </div>
+        <div class="stat">
+          <p>Food: <span id="food" class="stat-value">50%</span></p>
+          <p class="stat-desc">Our vital stores of sustenance for survival.</p>
+        </div>
+        <div class="stat">
+          <p>Economy: <span id="economy" class="stat-value">50%</span></p>
+          <p class="stat-desc">Our wealth and trade, essential for growth.</p>
+        </div>
+        <div class="stat">
+          <p>Relations: <span id="relations" class="stat-value">50%</span></p>
+          <p class="stat-desc">
+            Our standing with neighboring tribes and colonies.
+          </p>
+        </div>
+        <div class="stat">
+          <p>Morale: <span id="morale" class="stat-value">100%</span></p>
+          <p class="stat-desc">The spirit and well-being of our people.</p>
+        </div>
+        <div class="stat">
+          <p>Defense: <span id="defense" class="stat-value">50%</span></p>
+          <p class="stat-desc">Our ability to defend against threats.</p>
+        </div>
       </div>
+
+      <!-- Scenario Section -->
       <div id="scenario-container">
         <p id="scenario-text"></p>
 
@@ -37,6 +71,8 @@
           <button id="next-btn" class="btn">Next</button>
         </div>
       </div>
+
+      <!-- Start Button -->
       <button id="start-btn" class="btn">Start Game</button>
     </div>
     <script src="script.js"></script>
