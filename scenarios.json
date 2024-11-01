@@ -105,7 +105,7 @@
     ]
   },
   {
-    "scenario": "A drought severely reduces your colony’s water supply.",
+    "scenario": "A drought severely reduces your colony's water supply.",
     "preEffect": { "food": -10, "morale": -10 },
     "choices": [
       {
@@ -200,7 +200,7 @@
       {
         "text": "Negotiate with pirates for protection in exchange for payment.",
         "effects": { "economy": -5, "morale": -10, "defense": 5 },
-        "note": "Dealing with pirates protected temporarily but risked colony’s reputation. Comparison: Some colonies used pirates to secure economic trade routes."
+        "note": "Dealing with pirates protected temporarily but risked colony's reputation. Comparison: Some colonies used pirates to secure economic trade routes."
       },
       {
         "text": "Evacuate settlers to the interior temporarily.",
