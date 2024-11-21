@@ -1,6 +1,11 @@
 [
   {
     "scenario": "A nearby colony has been struck by disease, and you fear it may spread to your settlement.",
+    "images": [
+      "https://jamestowngroup6.weebly.com/uploads/2/6/6/9/26693554/6819501_orig.jpg",
+      "https://newyorkalmanack.com/wp-content/uploads/2015/08/sickbed.gif",
+      "https://smallstatebighistory.com/wp-content/uploads/2021/10/Smallpox-horse-growing-out-of-person-LOC.jpg"
+    ],
     "preEffect": { "morale": -10, "population": -5 },
     "choices": [
       {
@@ -22,6 +27,11 @@
   },
   {
     "scenario": "A food shortage threatens your colony due to poor harvests and pests.",
+    "images": [
+      "https://assets.editorial.aetnd.com/uploads/2021/01/colonial-america-gettyimages-517725134.jpg",
+      "https://www.thoughtco.com/thmb/sQDAyxPaGTXIqprrK7mZRHnMNMQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-471389331-5bb5127dc9e77c00264cae0f.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Paul_Sample%27s_America%2C_its_soil_LOC_2012588336.jpg/1200px-Paul_Sample%27s_America%2C_its_soil_LOC_2012588336.jpg"
+    ],
     "preEffect": { "food": -20, "morale": -10 },
     "choices": [
       {
@@ -43,6 +53,10 @@
   },
   {
     "scenario": "A group of colonists demand more rights and representation in colony decisions.",
+    "images": [
+      "https://www.worldhistory.org/img/c/p/1600x900/13480.jpg",
+      "https://i0.wp.com/thehill.com/wp-content/uploads/sites/2/2019/07/jamestown.png"
+    ],
     "preEffect": { "morale": -15 },
     "choices": [
       {
@@ -64,6 +78,11 @@
   },
   {
     "scenario": "Relations with a local tribe are tense, but they offer a peace treaty.",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/4/45/Interview_of_Samoset_with_the_Pilgrims.jpg",
+      "https://colonialamericanhistories.wordpress.com/wp-content/uploads/2018/05/fairfield-wpa-mural-tomilson-high-school-fmhc_2014_pano_pequot_-800x272-11.jpg",
+      "https://cdn.britannica.com/24/122324-050-6AE89FE0/Wedding-lithograph-Pocahontas-John-Rolfe-Geo-Spohni-1867.jpg"
+    ],
     "preEffect": { "relations": -10, "morale": -5 },
     "choices": [
       {
@@ -85,6 +104,10 @@
   },
   {
     "scenario": "A dispute over land ownership arises between settlers and a neighboring colony.",
+    "images": [
+      "https://tile.loc.gov/image-services/iiif/service:gmd:gmd370m:g3701m:g3701sm:gct00483:cs000018/full/2048,/0/default.jpg",
+      "https://www.americanhistorycentral.com/wp-content/uploads/2022/08/Oldest-Tobacco-Warehouse-in-America-Urbanna-VA-Illustration.webp"
+    ],
     "preEffect": { "relations": -10, "economy": -5 },
     "choices": [
       {
@@ -106,6 +129,9 @@
   },
   {
     "scenario": "A drought severely reduces your colony's water supply.",
+    "images": [
+      "https://assets.editorial.aetnd.com/uploads/2011/10/jamestown-settlers-skra084_xs227.jpg"
+    ],
     "preEffect": { "food": -10, "morale": -10 },
     "choices": [
       {
@@ -127,6 +153,10 @@
   },
   {
     "scenario": "A group of skilled artisans arrives, seeking work in your colony.",
+    "images": [
+      "https://www.colonialsense.com/HowTo/Pewter/pewtershop.jpg",
+      "https://i0.wp.com/revolutionarywarjournal.com/wp-content/uploads/2019/01/Boston-Tea-Party-6.jpg"
+    ],
     "preEffect": { "population": 5 },
     "choices": [
       {
@@ -148,6 +178,11 @@
   },
   {
     "scenario": "Your colony experiences an influx of indentured servants.",
+    "images": [
+      "https://cdn.theatlantic.com/thumbor/ZUKCIwBzZOQLFYMsSKich2xtchI=/0x100:1788x1106/1600x900/media/img/mt/2018/03/Cultivation_of_tobacco_at_Jamestown_1615/original.jpg",
+      "https://www.nps.gov/hamp/learn/historyculture/images/docks.jpg",
+      "https://tile.loc.gov/storage-services/service/pnp/cph/3c10000/3c16000/3c16200/3c16241r.jpg"
+    ],
     "preEffect": { "population": 10 },
     "choices": [
       {
@@ -169,6 +204,9 @@
   },
   {
     "scenario": "A wealthy settler offers a large donation to the colony in exchange for political influence.",
+    "images": [
+      "https://cdn.britannica.com/61/94561-050-1BD07EB5/Landing-lithograph-Pilgrims-Plymouth-Mass-Ives-Currier-1876.jpg"
+    ],
     "preEffect": { "economy": 10 },
     "choices": [
       {
@@ -190,6 +228,10 @@
   },
   {
     "scenario": "Rumors spread of a pirate attack on your coastal settlement.",
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Wager%27s_Action_off_Cartagena%2C_28_May_1708.jpg/1200px-Wager%27s_Action_off_Cartagena%2C_28_May_1708.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Capture-of-Blackbeard.jpg/640px-Capture-of-Blackbeard.jpg"
+    ],
     "preEffect": { "morale": -5, "defense": -10 },
     "choices": [
       {
@@ -211,6 +253,9 @@
   },
   {
     "scenario": "A new colony law sparks resistance among settlers.",
+    "images": [
+      "https://www.press.jhu.edu/sites/default/files/styles/max_325x325/public/migrate-files/preview/GettyImages-486417124.jpg"
+    ],
     "preEffect": { "morale": -15 },
     "choices": [
       {

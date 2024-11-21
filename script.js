@@ -23,10 +23,12 @@ const scenarioText = document.getElementById("scenario-text");
 const choiceButtons = document.getElementById("choice-buttons");
 const historicalNote = document.getElementById("historical-note");
 const additionalInfo = document.getElementById("additional-info");
-const imageElement = document.getElementById("scenario-image");
 const infoSection = document.getElementById("info-section");
 const nextBtn = document.getElementById("next-btn");
 const startBtn = document.getElementById("start-btn");
+const imageContainer = document.createElement("div");
+imageContainer.id = "image-container";
+infoSection.insertBefore(imageContainer, nextBtn);
 
 const populationEl = document.getElementById("population");
 const foodEl = document.getElementById("food");
@@ -114,6 +116,23 @@ function displayScenario() {
     nextBtn.style.display = "none";
 
     scenarioText.innerText = scenarioObj.scenario;
+
+    imageContainer.innerHTML = "";
+    if (scenarioObj.images && scenarioObj.images.length > 0) {
+        scenarioObj.images.forEach((imgSrc) => {
+            const imgElement = document.createElement("img");
+            imgElement.src = imgSrc;
+            imgElement.alt = "Scenario Image";
+            imgElement.style.maxWidth = "150px";
+            imgElement.style.margin = "10px";
+            imgElement.style.borderRadius = "5px";
+            imgElement.style.cursor = "pointer";
+            imgElement.style.boxShadow = "0 0 8px rgba(0, 0, 0, 0.15)";
+            imgElement.addEventListener("click", () => showImageInPopup(imgSrc));
+            imageContainer.appendChild(imgElement);
+        });
+    }
+
     scenarioObj.choices.forEach((choice) => {
         const button = document.createElement("button");
         button.innerText = choice.text;
@@ -121,6 +140,64 @@ function displayScenario() {
         button.addEventListener("click", () => handleChoice(choice));
         choiceButtons.appendChild(button);
     });
+}
+
+function showImageInPopup(src) {
+    const overlay = document.createElement("div");
+    overlay.id = "image-overlay";
+    overlay.style.position = "fixed";
+    overlay.style.top = "0";
+    overlay.style.left = "0";
+    overlay.style.width = "100%";
+    overlay.style.height = "100%";
+    overlay.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+    overlay.style.zIndex = "1000";
+    overlay.style.display = "flex";
+    overlay.style.justifyContent = "center";
+    overlay.style.alignItems = "center";
+
+    const zoomedImage = document.createElement("img");
+    zoomedImage.src = src;
+    zoomedImage.alt = "Zoomed Image";
+    zoomedImage.style.maxWidth = "90%";
+    zoomedImage.style.maxHeight = "90%";
+    zoomedImage.style.borderRadius = "10px";
+    zoomedImage.style.boxShadow = "0 0 15px rgba(255, 255, 255, 0.9)";
+    zoomedImage.style.cursor = "zoom-in";
+    zoomedImage.style.transition = "transform 0.3s ease-in-out";
+
+    let scale = 1;
+    let isZoomedIn = false;
+    zoomedImage.addEventListener("click", (event) => {
+        event.stopPropagation();
+        if (!isZoomedIn) {
+            scale = 2;
+            zoomedImage.style.transform = `scale(${scale})`;
+            zoomedImage.style.cursor = "zoom-out";
+            isZoomedIn = true;
+        } else {
+            scale = 1;
+            zoomedImage.style.transform = `scale(${scale})`;
+            zoomedImage.style.cursor = "zoom-in";
+            isZoomedIn = false;
+        }
+    });
+
+    zoomedImage.addEventListener("wheel", (event) => {
+        event.preventDefault();
+        scale += event.deltaY * -0.01;
+        scale = Math.min(Math.max(0.5, scale), 3);
+        zoomedImage.style.transform = `scale(${scale})`;
+        isZoomedIn = scale > 1;
+        zoomedImage.style.cursor = isZoomedIn ? "zoom-out" : "zoom-in";
+    });
+
+    overlay.addEventListener("click", () => {
+        document.body.removeChild(overlay);
+    });
+
+    overlay.appendChild(zoomedImage);
+    document.body.appendChild(overlay);
 }
 
 function handleChoice(choice) {
@@ -143,8 +220,6 @@ function applyEffects(effects, isPreEffect = false) {
 function showInfoSections(choice) {
     historicalNote.innerText = "Historical Note: " + choice.note;
     additionalInfo.innerText = choice.additionalInfo || "";
-    imageElement.src = choice.image || "";
-    imageElement.style.display = choice.image ? "block" : "none";
 }
 
 function proceedToNextScenario() {
@@ -180,5 +255,5 @@ function clearButtons() {
 function clearInfoSections() {
     historicalNote.innerText = "";
     additionalInfo.innerText = "";
-    imageElement.style.display = "none";
+    imageContainer.innerHTML = "";
 }
